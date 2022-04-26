@@ -39,7 +39,10 @@ const exampleProductArray = [
  * @returns {number}
  */
 function level3exercise1(products) {
-
+  let sum = 0;
+  for (let i = 0; i < products.length; i++)
+    sum += products[i].price
+  return sum
 }
 
 /**
@@ -49,7 +52,18 @@ function level3exercise1(products) {
  * @returns {string}
  */
 function level3exercise2(products) {
-
+  let price = 0;
+  let name = " ";
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price > price) {
+      price = products[i].price
+      name = products[i].name
+    }
+    else {
+      price
+    }
+  }
+  return name
 }
 
 /**
@@ -59,7 +73,18 @@ function level3exercise2(products) {
  * @returns {Product}
  */
 function level3exercise3(products) {
-
+  let price = 0;
+  let name = " ";
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price < price) {
+      price = products[i].price
+      name = products[i].name
+    }
+    else {
+      price
+    }
+  }
+  return name
 }
 
 /**
